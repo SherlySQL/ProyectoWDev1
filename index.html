@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>Arquitectura Futurista</title>
+</head>
+
+<body>
+
+<!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Home</a>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Casas <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Exteriores</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interiores</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Sala</a>
+                    <a class="dropdown-item" href="#">Cocina</a>
+                    <a class="dropdown-item" href="#">Baños</a>
+                    <a class="dropdown-item" href="#">Habitaciones</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
+<div class="jumbotron" id="Encabezado">
+    <div class="container"></div>
+        <img src="/img/casa3.jpg" alt="" width="1950px" height="750px"> 
+        <h1 class="display-3">Arquitectura Futurista</h1>
+        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Sign up today</a>
+    </div>
+</div>
+
+
+<!-------------------------------------------------------------------------CONTAINER------------------------------------------------------------------------------------>
+<div class="container">
+     <div class="row">
+
+        <div class="col md-4">
+            <section id="columna1">
+                <img src="/img/sala.jpeg" class="rounded-circle mt-4 offset-1" alt="imagen1" width="300px" height="300px">
+                <h3 class="display-5 text-center mt-5">Salas</h3>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
+                    voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
+            </section>
+            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar1">View details &raquo;</a>
+        </div>
+
+        <div class="col md-4">
+            <section id="columna2">
+                <img src="/img/sala2.jpeg" class="rounded-circle mt-4 offset-1" alt="imagen2" width="300px" height="300px">
+                <h3 class="display-5 text-center mt-5">Terrazas</h3>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
+                    voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
+            </section>
+            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar2">View details &raquo;</a>
+        </div>
+
+        <div class="col md-4">
+            <section id="columna3">
+                <img src="/img/Ocean-View-Drive.jpg" class="rounded-circle mt-4 offset-1" alt="imagen3" width="300px" height="300px">
+                <h3 class="display-5 text-center mt-5">Exteriores</h3>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
+                    voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
+            </section>
+            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar3">View details &raquo;</a>
+        </div>
+     </div>   
+</div>
+
+
+
+<!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
+<footer>
+    <div class="jumbotron mt-5" id="footer" >
+        <div class="mt-5 text-center" id="final">
+            <p>Derechos Reservados &copy;</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+
+
+<!-------------------------------------------------------------------------EVENTOS JQUERY------------------------------------------------------------------------------------>
+<script>
+$(document).ready(function () { // carga el DOM
+
+    //QUE LOS ELEMENTOS "CON ESTOS ID" INICIEN OCULTOS
+    $("#columna1").hide();
+    $("#columna2").hide();
+    $("#columna3").hide();
+
+
+    //QUE AL HACER CLICK A LOS BOTONES "CON ESTOS ID" SE MUESTRE LO OCULTO
+    $("#ocultar1").click(function (e) { 
+        e.preventDefault();
+        $("#columna1").show();
+    });
+
+    $("#ocultar2").click(function (e) { 
+        e.preventDefault();
+        $("#columna2").show();
+    });
+
+    $("#ocultar3").click(function (e) { 
+        e.preventDefault();
+        $("#columna3").show();
+    });
+});
+
+</script>
+
+
+
+</body>
+</html>
