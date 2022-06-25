@@ -5,21 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+<!-- BOOTSTRAP 4 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- SCROOLL REVEAL JS LIBRARY CDN -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!-- LINK CSS E ICONO -->
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="/iconos/arquitecture.png">
+<link rel="icon" href="/iconos/aTurquesa.png">
 <title>Arquitectura Futurista</title>
 </head>
 
 <body>
 
+
 <!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Home</a>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand mt-3" href="#" id="Home">Home</a>
 
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-3">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Casas <span class="sr-only">(current)</span></a>
             </li>
@@ -47,7 +54,7 @@
 <!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
 <div class="jumbotron" id="Encabezado">
     <div class="container"></div>
-        <img src="/img/casa3.jpg" alt="" width="1950px" height="750px"> 
+        <img src="/img/casa3.jpg" alt="" width="1950px" height="750px" id="imagenprincipal"> 
         <h1 class="display-3">Arquitectura Futurista</h1>
 
         <!-- Button trigger modal -->
@@ -55,42 +62,86 @@
     </div>
 </div>
 
-
 <!-------------------------------------------------------------------------CONTAINER ROW#1------------------------------------------------------------------------------------>
-<div class="container">
-     <div class="row">
+<div class="container-fluid">
+    <div class="row d-flex" id="row1">
+        <div class="col md-4 text-center ml-5">
+            <img src="/img/casa2.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center">
+            <img src="/img/Ocean-View-Drive.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center mr-5">
+            <img src="/img/Aarquitectura2.jpg" alt="" width="500px" height="300px">
+        </div>
+    </div>
+</div><br><br>
 
-        <div class="col md-4">
+<!-------------------------------------------------------------------------CONTAINER ROW#2------------------------------------------------------------------------------------>
+<div class="container-fluid">
+    <div class="row d-flex" id="row2">
+        <div class="col md-4 text-center ml-5">
+            <img src="/img/casa2.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center">
+            <img src="/img/Ocean-View-Drive.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center mr-5">
+            <img src="/img/Aarquitectura2.jpg" alt="" width="500px" height="300px">
+        </div>
+    </div>
+</div><br><br>
+
+<!-------------------------------------------------------------------------CONTAINER ROW#3------------------------------------------------------------------------------------>
+<div class="container-fluid">
+    <div class="row d-flex" id="row3">
+        <div class="col md-4 text-center ml-5">
+            <img src="/img/casa2.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center">
+            <img src="/img/Ocean-View-Drive.jpg" alt="" width="500px" height="300px">
+        </div>
+        <div class="col md-4 text-center mr-5">
+            <img src="/img/Aarquitectura2.jpg" alt="" width="500px" height="300px">
+        </div>
+    </div>
+</div><br><br>
+
+<!-------------------------------------------------------------------------CONTAINER ROW#4------------------------------------------------------------------------------------>
+<hr>
+<div class="jumbotron" id="row4">
+     <div class="row d-flex">
+        <div class="col md-4 text-center">
             <section id="columna1">
-                <img src="/img/sala.jpeg" class="rounded-circle mt-4 offset-1" alt="imagen1" width="300px" height="300px">
+                <img src="/img/sala.jpeg" class="rounded-circle mt-4 " alt="imagen1" width="300px" height="300px">
                 <h3 class="display-5 text-center mt-5">Salas</h3>
                 <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
                     voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
             </section>
-            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar1">View details &raquo;</a>
+            <a href="" class="btn btn-dark text-center mt-2" id="ocultar1">View details &raquo;</a>
         </div>
 
-        <div class="col md-4">
+        <div class="col md-4 text-center">
             <section id="columna2">
-                <img src="/img/sala2.jpeg" class="rounded-circle mt-4 offset-1" alt="imagen2" width="300px" height="300px">
+                <img src="/img/sala2.jpeg" class="rounded-circle mt-4" alt="imagen2" width="300px" height="300px">
                 <h3 class="display-5 text-center mt-5">Terrazas</h3>
                 <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
                     voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
             </section>
-            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar2">View details &raquo;</a>
+            <a href="" class="btn btn-dark text-center mt-2" id="ocultar2">View details &raquo;</a>
         </div>
 
-        <div class="col md-4">
+        <div class="col md-4 text-center">
             <section id="columna3">
-                <img src="/img/Ocean-View-Drive.jpg" class="rounded-circle mt-4 offset-1" alt="imagen3" width="300px" height="300px">
+                <img src="/img/Ocean-View-Drive.jpg" class="rounded-circle mt-4" alt="imagen3" width="300px" height="300px">
                 <h3 class="display-5 text-center mt-5">Exteriores</h3>
                 <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Atque tenetur aliquid laudantium minus harum doloremque et, dicta, iusto, 
                     voluptate molestias repellat quos sed sequi dolorum? Aliquid aut sapiente beatae. Illo.</p>
             </section>
-            <a href="" class="btn btn-dark offset-4 mt-2" id="ocultar3">View details &raquo;</a>
+            <a href="" class="btn btn-dark text-center mt-2" id="ocultar3">View details &raquo;</a>
         </div>
      </div>   
 </div>
@@ -150,12 +201,9 @@
 
 
 
-
-
-
 <!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
 <footer>
-    <div class="jumbotron mt-5" id="footer" >
+    <div class="jumbotron" id="footer" >
         <div class="mt-5 text-center" id="final">
             <p>Derechos Reservados &copy Sherly Clarke, Movil-8951-1383, Correo:sherly.clarke@gmail.com;</p>
         </div>
@@ -170,10 +218,10 @@
 
 
 
-
-<!-------------------------------------------------------------------------EVENTOS JQUERY PARA EJERCICIO 1------------------------------------------------------------------------------------>
 <script>
-$(document).ready(function () { // carga el DOM
+//-------------------------------------------------------------------------EJERCICIO #1 EVENTOS JQUERY HIDE O SHOW------------------------------------------------------------------------------------
+
+    $(document).ready(function () { // carga el DOM
 
     //QUE LOS ELEMENTOS "CON ESTOS ID" INICIEN OCULTOS
     $("#columna1").hide();
@@ -196,12 +244,68 @@ $(document).ready(function () { // carga el DOM
         e.preventDefault();
         $("#columna3").show();
     });
-});
-
-//<div id="contenido">
+    });
 </script>
 
 
 
+<script>
+//-------------------------------------------------------------------------EJERCICIO #6 SCROOLL REVEAL SCRIPT------------------------------------------------------------------------------------
+//Para los efectos de transición entre los elementos de la pagina
+
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'right',
+      distance: '150px'
+    });
+
+    sr.reveal('#imagenprincipal', {
+      duration: 2000,
+      origin: 'top',
+      distance: '150px'
+    });
+
+    sr.reveal('#row1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    sr.reveal('#row2', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    sr.reveal('#row3', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+    sr.reveal('#row4', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

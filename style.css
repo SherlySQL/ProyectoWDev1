@@ -1,32 +1,44 @@
+ 
+.nav-link{
+    font-size:larger;
+    font-family:cursive;  
+}
+
+#Home{
+    font-size:xx-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 #Encabezado{
     background:black
-  
 }
 
 h1 {
     color:white
 }
 
+#row4{
+    background-color: #dfe6e9;;
+}
 #footer{
-   background:rgb(155, 228, 241) 
+    background-color:#81ecec;
 }
 
 #footer #final p{
     font-weight: bold;
  }
  
- /*card{
-    border-color: black;
-    border: 10px;
- }*/
-
- .categoria{
+.categoria{
     font-size: 20px;
     text-align: center;
  }
 
- .atributo{
+.atributo{
     font-size: 50px;
     text-align: center;
+ }
+
+ hr{
+    border-color: black;
  }
