@@ -4,11 +4,9 @@
   
 }
 
-
 h1 {
     color:white
 }
-
 
 #footer{
    background:rgb(155, 228, 241) 
@@ -18,3 +16,17 @@ h1 {
     font-weight: bold;
  }
  
+ /*card{
+    border-color: black;
+    border: 10px;
+ }*/
+
+ .categoria{
+    font-size: 20px;
+    text-align: center;
+ }
+
+ .atributo{
+    font-size: 50px;
+    text-align: center;
+ }

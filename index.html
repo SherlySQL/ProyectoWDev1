@@ -7,8 +7,8 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="/iconos/arquitecture.png">
 <title>Arquitectura Futurista</title>
 </head>
 
@@ -49,12 +49,14 @@
     <div class="container"></div>
         <img src="/img/casa3.jpg" alt="" width="1950px" height="750px"> 
         <h1 class="display-3">Arquitectura Futurista</h1>
-        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Sign up today</a>
+
+        <!-- Button trigger modal -->
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="Api1 ()" data-toggle="modal" data-target="#modelId">Sign up today</a>
     </div>
 </div>
 
 
-<!-------------------------------------------------------------------------CONTAINER------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------------------CONTAINER ROW#1------------------------------------------------------------------------------------>
 <div class="container">
      <div class="row">
 
@@ -95,11 +97,67 @@
 
 
 
+<!-------------------------------------------------------------------------VENTANA MODAL O EMERGENTE------------------------------------------------------------------------------------>
+<!-- Button trigger Modal sizes--> 
+<!-- El Boton que activa la venta modal está arriba "Sign Up Today" con el data-target="modelId"-->
+
+<!-- Ventana Emergente Modal sizes-->
+<!-- Utilicé  el estilo "ventana modal sizes" y le agregué un tamaño modal-xl para que se me hiciera horizontal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">INGENIEROS & ARQUITECTOS ASOCIADOS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="container"> <!--los div id="foto", id="contenido1", id="contenido2", se rellenan dinamicamente desde app.js-->
+                    <div class="card border border-primary"> <!--para crear un marco-->
+                        <div class="row d-flex justify-content-center mt-3" id="foto">
+                        
+                        </div> <br>
+                        <div class="row d-flex justify-content-center" id="contenido1">
+                            
+                        </div> 
+                        <div class="row d-flex justify-content-center" id="contenido2">
+                            
+                        </div> <br>
+                        <div class="row d-flex justify-content-center">
+                            <img src="/iconos/name.png" alt="name" width="60px" height="60px" class="mx-3" id="name">
+                            <img src="/iconos/arrobaA.png" alt="email" width="60px" height="60px" class="mx-3" id="email">
+                            <img src="/iconos/location (3).png" alt="pais" width="60px" height="60px" class="mx-3" id="pais">
+                            <img src="/iconos/phone (1).png" alt="phone" width="60px" height="60px" class="mx-3" id="phone">
+                            <img src="/iconos/deviceT.png" alt="cellphone" width="60px" height="60px" class="mx-3" id="cellphone">
+                            <img src="/iconos/people (3).png" alt="gender" width="60px" height="60px" class="mx-3" id="gender">
+                        </div><br><br>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-block" onclick="Api1()">NEXT</button>
+                </div>
+ 
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
 <footer>
     <div class="jumbotron mt-5" id="footer" >
         <div class="mt-5 text-center" id="final">
-            <p>Derechos Reservados &copy;</p>
+            <p>Derechos Reservados &copy Sherly Clarke, Movil-8951-1383, Correo:sherly.clarke@gmail.com;</p>
         </div>
     </div>
 </footer>
@@ -113,7 +171,7 @@
 
 
 
-<!-------------------------------------------------------------------------EVENTOS JQUERY------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------------------EVENTOS JQUERY PARA EJERCICIO 1------------------------------------------------------------------------------------>
 <script>
 $(document).ready(function () { // carga el DOM
 
@@ -140,6 +198,7 @@ $(document).ready(function () { // carga el DOM
     });
 });
 
+//<div id="contenido">
 </script>
 
 
