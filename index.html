@@ -54,11 +54,11 @@
 <!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
 <div class="jumbotron" id="Encabezado">
     <div class="container"></div>
-        <img src="/img/casa3.jpg" alt="" width="1950px" height="750px" id="imagenprincipal"> 
+        <img src="/img/casa3.jpg" alt="" width="1850px" height="750px" id="imagenprincipal" class="my-5 mx-5"> 
         <h1 class="display-3">Arquitectura Futurista</h1>
 
         <!-- Button trigger modal -->
-        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="Api1 ()" data-toggle="modal" data-target="#modelId">Sign up today</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="Api1 ()" data-toggle="modal" data-target="#modelId" id="botonsignup">Sign up today</a>
     </div>
 </div>
 
@@ -266,6 +266,18 @@
       duration: 2000,
       origin: 'top',
       distance: '150px'
+    });
+
+    sr.reveal('.display-3', {
+      duration: 2000,
+      origin: 'top',
+      distance: '150px'
+    });
+
+    sr.reveal('#botonsignup', {
+      duration: 2000,
+      origin: 'top',
+      distance: '200px'
     });
 
     sr.reveal('#row1', {
