@@ -1,12 +1,13 @@
  
 .nav-link{
-    font-size:larger;
+    font-size:large;
     font-family:cursive;  
 }
 
 #Home{
-    font-size:xx-large;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*font-size:xx-large;*/
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
 }
 
 
@@ -20,13 +21,17 @@ h1 {
 
 #row4{
     background-color: #dfe6e9;;
-}
-#footer{
-    background-color:#81ecec;
+    height: 650px;
 }
 
-#footer #final p{
-    font-weight: bold;
+#footer {
+    background-color:#0a3d62;
+    height: 300px;
+}
+
+#footer h3, h4{
+   /* font-weight: bold;*/
+    color:#ffffff;
  }
  
 .categoria{
