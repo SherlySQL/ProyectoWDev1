@@ -23,18 +23,18 @@
 
 <!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand mt-3" href="#" id="Home"><img src="/iconos/a.png" alt="">rquitectura Futurista</a>
+    <a class="navbar-brand mt-3" href="index.html" id="Home"><img src="/iconos/a.png" alt="">rquitectura Futurista</a>
   
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-3">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Iniciar Sesión<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="IniciarSesion.html">Iniciar Sesión<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Contáctenos<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="Contactenos.html">Contáctenos<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Información</a>
+                <a class="nav-link" href="Informacion.html">Información</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recintos</a>
@@ -57,11 +57,20 @@
 <!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
 <div class="jumbotron" id="Encabezado">
     <div class="container"></div>
-        <img src="/img/casa3.jpg" alt="" width="1850px" height="750px" id="imagenprincipal" class="my-5 mx-5"> 
-        <h1 class="display-3">Arquitectura Futurista</h1>
-
-        <!-- Button trigger modal -->
-        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="Api1 ()" data-toggle="modal" data-target="#modelId" id="botonsignup">Sign up today</a>
+        <div class="row" id="imagenprincipal">
+            <img src="/img/casa3.jpg" alt="" width="1850px" height="750px" id="imagenprincipal" class="my-5 mx-5"> 
+        </div>
+                
+        <div class="row" id="tituloprincipal">
+            <div class="col md-4">
+                <h1 class="display-3">Arquitectura Futurista</h1>
+            </div>
+            <div class="col md-4 mt-4 text-center">
+                <!-- Button trigger modal -->
+                <a class="btn btn-primary btn-lg" href="#" role="button" onclick="Api1 ()" data-toggle="modal" data-target="#modelId" id="botonsignup">Sign up today</a>
+            </div>
+        </div>
+        
     </div>
 </div>
 
@@ -209,14 +218,14 @@
           <div class="row ">
             <div class="col md-4 d-flex ">
                 <div class="header-content-left ml-5 mt-5">
-                    <div class="row"><h4>Contacto: Movil-8951-1383 </h4></div>
+                    <div class="row mt-5"><h4>Contacto: Movil-8951-1383 </h4></div>
                     <div class="row"><h4>Correo: sherly.clarke@gmail.com </h4></div>
                     <div class="row"><h4>Derechos Reservados &copy Sherly Clarke</h4></div>
                 </div>
             </div>
             <div class="col md-8 d-flex justify-content-center mt-5">
                 <div class="header-content-right">
-                    <h3>Seguínos</h3>
+                    <h3 class="mt-5 mb-3">Seguínos</h3>
                     <a href="#"></a><img src="/iconos/facebook.png" alt="Facebook" class="mx-3" width="45px" height="45px"></a>
                     <a href="#"></a><img src="/iconos/whatsapp.png" alt="whastApp" class="mx-3" width="45px" height="45px"></a>
                     <a href="#"></a><img src="/iconos/instagram.png" alt="Instagram" class="mx-3" width="45px" height="45px"></a>
