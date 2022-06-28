@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+<!-- BOOTSTRAP 4 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- SCROOLL REVEAL JS LIBRARY CDN -->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!-- LINK CSS E ICONO -->
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="/iconos/aTurquesa.png">
+<title>Arquitectura Futurista</title>
+</head>
+
+<body>
+
+
+<!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand mt-3" href="index.html" id="Home"><img src="/iconos/a.png" alt="">rquitectura Futurista</a>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-3">
+            <li class="nav-item active">
+                <a class="nav-link" href="IniciarSesion.html">Iniciar Sesión<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Contactenos.html">Contáctenos<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Informacion.html">Información</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recintos</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Sala</a>
+                    <a class="dropdown-item" href="#">Cocina</a>
+                    <a class="dropdown-item" href="#">Baños</a>
+                    <a class="dropdown-item" href="#">Habitaciones</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+
+
+<!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
+<div class="jumbotron" id="Encabezado">
+    <div class="container"></div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+<script>
+//-------------------------------------------------------------------------EJERCICIO #6 SCROOLL REVEAL SCRIPT------------------------------------------------------------------------------------
+//Para los efectos de transición entre los elementos de la pagina
+
+    window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'right',
+      distance: '150px'
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

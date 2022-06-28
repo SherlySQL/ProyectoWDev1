@@ -1,4 +1,10 @@
- 
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
 .nav-link{
     font-size:large;
     font-family:cursive;  
@@ -28,7 +34,6 @@ h1 {
 }
 
 #footer h3, h4{
-   /* font-weight: bold;*/
     color:#ffffff;
  }
  
@@ -45,3 +50,20 @@ h1 {
  hr{
     border-color: black;
  }
+
+ #fondoImagen1{
+    background: url(/img/fon13.jpg);
+ }
+
+ #fondoImagen2{
+    background: url(/img/fondo11.jpg);
+ }
+
+
+ #fondoImagen1 p{
+    font-weight: bold;
+ }
+
+
+.icono-placeholder{
+}

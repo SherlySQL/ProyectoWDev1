@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <!-- SCROOLL REVEAL JS LIBRARY CDN -->
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<!-- FONT-AWESOME PARA LOS ICONOS DEL PLACEHOLDER CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- LINK CSS E ICONO -->
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="/iconos/aTurquesa.png">
@@ -24,7 +26,7 @@
 <!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <a class="navbar-brand mt-3" href="index.html" id="Home"><img src="/iconos/a.png" alt="">rquitectura Futurista</a>
-  
+
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-3">
             <li class="nav-item active">
@@ -37,7 +39,8 @@
                 <a class="nav-link" href="Informacion.html">Información</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recintos</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Recintos</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">Sala</a>
                     <a class="dropdown-item" href="#">Cocina</a>
@@ -55,46 +58,80 @@
 
 
 
-<!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
-<div class="jumbotron" id="Encabezado">
-    <div class="container"></div>
 
-        ttttttttttttttttt
+<!-------------------------------------------------------------------------FORM DE INSCRIPCIÓN------------------------------------------------------------------------------------>
+<section id="fondoImagen1">
+    <div class="container">
+        <div class="row mt-5 p-5">
+            <div class="col-md-6 m-auto">
+                <form class="mt-5 mb-5" action="" method="">
+
+                        <div class="form-group text-center">
+                            <h4>BIENVENIDOS A</h4> 
+                            <h4>ARQUITECTURA FUTURISTA</h4>
+                            <p class="mt-4 mb-4">Con el compromiso de siempre por brindar herramientas que apoyen en la gestión de ventas y el cumplimiento de objetivos ponemos a su disposición nuestra zona de aliendos, 
+                                la cual permitirá reducir los tiempos de respuesta en los procesos de cotización y emisión con mayor accesibilidad y comodidad
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700"; type="text" class="form-control" class="icono-placeholder" placeholder="&#xf02d; Nombre del aliado" required>   
+                        </div>
+
+                        <div class="form-group">
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700"; type="email" class="form-control" class="icono-placeholder"  placeholder="&#xf007; Usuario o Correo" required>
+                        </div>
+
+                        <div class="form-group">               
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700"; type="password" class="form-control" class="icono-placeholder" placeholder="&#xf023; Clave de Acceso" required>
+                        </div>
+
+                        <input type="submit" value="Iniciar" class="btn btn-info btn-block" style="font-size:larger;">
+
+                        <p class="form-group text-center mt-5">Olvidó su clave de acceso?</p>
+                        <p class="form-group text-center mt-5">ARQUITECTURA FUTURISTA.</p>
+                        <p class="form-group text-center">&copy;2022 Todos los derechos Reservados</p>
+
+
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-
+</section>
 
 
 <!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
 <footer id="footer">
-          <div class="row ">
-            <div class="col md-4 d-flex ">
-                <div class="header-content-left ml-5 mt-5">
-                    <div class="row mt-5"><h4>Contacto: Movil-8951-1383 </h4></div>
-                    <div class="row"><h4>Correo: sherly.clarke@gmail.com </h4></div>
-                    <div class="row"><h4>Derechos Reservados &copy Sherly Clarke</h4></div>
-                </div>
-            </div>
-            <div class="col md-8 d-flex justify-content-center mt-5">
-                <div class="header-content-right">
-                    <h3 class="mt-5 mb-3">Seguínos</h3>
-                    <a href="#"></a><img src="/iconos/facebook.png" alt="Facebook" class="mx-3" width="45px" height="45px"></a>
-                    <a href="#"></a><img src="/iconos/whatsapp.png" alt="whastApp" class="mx-3" width="45px" height="45px"></a>
-                    <a href="#"></a><img src="/iconos/instagram.png" alt="Instagram" class="mx-3" width="45px" height="45px"></a>
-                    <a href="#"></a><img src="/iconos/tiktok.png" alt="tiktok" class="mx-3" width="45px" height="45px"></a>     
-                </div>
-            </div>
-        </div>
-               
+    <div class="row ">
+      <div class="col md-4 d-flex ">
+          <div class="header-content-left ml-5 mt-5">
+              <div class="row mt-5"><h4>Contacto: Movil-8951-1383 </h4></div>
+              <div class="row"><h4>Correo: sherly.clarke@gmail.com </h4></div>
+              <div class="row"><h4>Derechos Reservados &copy Sherly Clarke</h4></div>
+          </div>
+      </div>
+      <div class="col md-8 d-flex justify-content-center mt-5">
+          <div class="header-content-right">
+              <h3 class="mt-5 mb-3">Seguínos</h3>
+              <a href="#"></a><img src="/iconos/facebook.png" alt="Facebook" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/whatsapp.png" alt="whastApp" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/instagram.png" alt="Instagram" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/tiktok.png" alt="tiktok" class="mx-3" width="45px" height="45px"></a>     
+          </div>
+      </div>
+  </div>
+         
 </footer>
+
+
+
+
 
 
 <script src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
-
 
 
 
@@ -109,6 +146,12 @@
     sr.reveal('.navbar', {
       duration: 2000,
       origin: 'right',
+      distance: '150px'
+    });
+
+    sr.reveal('.container', {
+      duration: 2000,
+      origin: 'top',
       distance: '150px'
     });
 
