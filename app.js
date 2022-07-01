@@ -105,4 +105,32 @@ function Api1() {
 
 
 
+//----------------------------------------------------------------------EJERCICIO #12 CONSULTAR API Y MOSTRAR EN TABLA------------------------------------------------------------------------------------
 
+
+function Api2() {
+    let contenidotabla=document.getElementById("contenidotabla")
+    let misdatos="" //Lo declaro "" para que no tire undefined en la primera linea
+    let url="https://jsonplaceholder.typicode.com/photos" //URL del Api
+
+    fetch(url) //solicitud con fetch
+    .then(response => response.json()) 
+    .then(data =>{ //la data es la promesa que les cumplio el API
+
+        data.forEach(element => { //aca pintamos el contenido de la tabla dinamicamente
+            misdatos += `
+            <tr>
+                <td>${element.albumId}</td>
+                <td>${element.id}</td>
+                <td>${element.thumbnailUrl}</td>
+                <td>${element.title}</td>
+                <td>${element.url}</td>
+            </tr> `    
+        });
+    
+        console.log (data)
+        contenidotabla.innerHTML=misdatos //Meter la info en el HTML
+                                          //? "True" : "Falso" ESTO ES UN IF MODERNO, (si es True cambiar a Activo)
+                                          //(si es False cambiar a Inactivo)  
+
+})}

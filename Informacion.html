@@ -59,12 +59,40 @@
 
 
 
-<!-------------------------------------------------------------------------JUMBOTRON------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------------------ENCABEZADO------------------------------------------------------------------------------------>
 <div class="jumbotron" id="Encabezado">
     <div class="container"></div>
-
-        
+        <h1 class="text-center mt-5">INFORMACIÓN DE INTERÉS</h1>
     </div>
+</div>
+
+
+<!-------------------------------------------------------------------------TABLA DINAMICA------------------------------------------------------------------------------------>
+
+<div class="container-fluid">
+    <input type="button" value="Presione para ver el detalle de la Tabla" class=" btn btn-primary mt-5" onclick="Api2 ()">
+
+    <div class="mt-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>AlbumID</th>
+                    <th>ID</th>
+                    <th>ThumbnailURL</th>
+                    <th>Title</th>
+                    <th>URL</th>
+                </tr>
+            </thead>
+
+
+            <!--Se deja este body vacio para ingresarle los datos de la tabla dinamicamente-->
+            <tbody id="contenidotabla">
+
+
+            </tbody>
+        </table>
+    </div>
+
 </div>
 
 
