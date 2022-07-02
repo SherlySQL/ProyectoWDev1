@@ -68,7 +68,15 @@ h1 {
 .icono-placeholder{
 }
 
+table, td, th {
+    border: 1px solid gray;
+}
 
-visitanos{
-    
+th {
+    color: #ffff;
+}
+
+#tabla{
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   width: 90%;   
 }

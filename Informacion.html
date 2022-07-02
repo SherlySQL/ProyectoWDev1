@@ -72,10 +72,10 @@
 <div class="container-fluid">
     <input type="button" value="Presione para ver el detalle de la Tabla" class=" btn btn-primary mt-5" onclick="Api2 ()">
 
-    <div class="mt-5">
-        <table class="table table-striped">
+    <div class="mt-5 mb-5">
+        <table class="table table-striped m-auto" id="tabla">
             <thead>
-                <tr>
+                <tr class="bg-dark">
                     <th>AlbumID</th>
                     <th>ID</th>
                     <th>ThumbnailURL</th>
@@ -100,6 +100,30 @@
 
 
 
+<!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
+<footer id="footer">
+    <div class="row ">
+      <div class="col md-4 d-flex ">
+          <div class="header-content-left ml-5 mt-5">
+              <div class="row mt-5"><h4>Contacto: Movil-8951-1383 </h4></div>
+              <div class="row"><h4>Correo: sherly.clarke@gmail.com </h4></div>
+              <div class="row"><h4>Derechos Reservados &copy Sherly Clarke</h4></div>
+          </div>
+      </div>
+      <div class="col md-8 d-flex justify-content-center mt-5">
+          <div class="header-content-right">
+              <h3 class="mt-5 mb-3">Seguínos</h3>
+              <a href="#"></a><img src="/iconos/facebook.png" alt="Facebook" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/whatsapp.png" alt="whastApp" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/instagram.png" alt="Instagram" class="mx-3" width="45px" height="45px"></a>
+              <a href="#"></a><img src="/iconos/tiktok.png" alt="tiktok" class="mx-3" width="45px" height="45px"></a>     
+          </div>
+      </div>
+  </div>
+         
+</footer>
+
+
 <script src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
@@ -110,29 +134,42 @@
 
 
 
+    <script>
+    //-------------------------------------------------------------------------EJERCICIO #6 SCROOLL REVEAL SCRIPT------------------------------------------------------------------------------------
+    //Para los efectos de transición entre los elementos de la pagina
 
-<script>
-//-------------------------------------------------------------------------EJERCICIO #6 SCROOLL REVEAL SCRIPT------------------------------------------------------------------------------------
-//Para los efectos de transición entre los elementos de la pagina
+        window.sr = ScrollReveal();
 
-    window.sr = ScrollReveal();
-
-    sr.reveal('.navbar', {
-      duration: 2000,
-      origin: 'right',
-      distance: '150px'
-    });
-
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+        sr.reveal('.navbar', {
+        duration: 2000,
+        origin: 'right',
+        distance: '150px'
         });
-      });
-    });
-  </script>
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+            });
+        });
+        });
+    </script>
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+        //Parte 2 - -mostrar tabla al cargar el documento
+        $("#tabla").show();
+
+        });
+
+    </script>
+
 </body>
 </html>
