@@ -68,6 +68,11 @@ h1 {
 .icono-placeholder{
 }
 
+.tabulacion{
+   /* background-color: #dfe6e9;;*/
+    height: 9650px;
+}
+
 table, td, th {
     border: 1px solid gray;
 }

@@ -120,8 +120,8 @@ function Api2() {
         data.forEach(element => { //aca pintamos el contenido de la tabla dinamicamente
             misdatos += `
             <tr>
-                <td>${element.albumId}</td>
-                <td>${element.id}</td>
+                <td class="text-center">${element.albumId}</td>
+                <td class="text-center">${element.id}</td>
                 <td>${element.thumbnailUrl}</td>
                 <td>${element.title}</td>
                 <td>${element.url}</td>

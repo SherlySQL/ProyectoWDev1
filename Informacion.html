@@ -18,8 +18,9 @@
 <title>Arquitectura Futurista</title>
 </head>
 
-<body>
 
+
+<body onload="Api2 ()"> <!--funcion propia del body -->
 
 <!-------------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -69,13 +70,12 @@
 
 <!-------------------------------------------------------------------------TABLA DINAMICA------------------------------------------------------------------------------------>
 
-<div class="container-fluid">
-    <input type="button" value="Presione para ver el detalle de la Tabla" class=" btn btn-primary mt-5" onclick="Api2 ()">
-
+<div  class="tabulacion">
+    
     <div class="mt-5 mb-5">
         <table class="table table-striped m-auto" id="tabla">
             <thead>
-                <tr class="bg-dark">
+                <tr class="bg-dark text-center">
                     <th>AlbumID</th>
                     <th>ID</th>
                     <th>ThumbnailURL</th>
@@ -101,8 +101,8 @@
 
 
 <!-------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------>
-<footer id="footer">
-    <div class="row ">
+<footer id="footer" >  
+    <div class="row">
       <div class="col md-4 d-flex ">
           <div class="header-content-left ml-5 mt-5">
               <div class="row mt-5"><h4>Contacto: Movil-8951-1383 </h4></div>
@@ -160,16 +160,6 @@
 
 
 
-
-    <script>
-
-        $(document).ready(function () {
-        //Parte 2 - -mostrar tabla al cargar el documento
-        $("#tabla").show();
-
-        });
-
-    </script>
 
 </body>
 </html>
