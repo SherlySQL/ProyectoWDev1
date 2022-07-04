@@ -28,15 +28,6 @@ h1 {
     height: 650px;
 }
 
-#footer {
-    background-color:#0a3d62;
-    height: 300px;
-}
-
-#footer h3, h4{
-    color:#ffffff;
- }
- 
 .categoria{
     font-size: 20px;
     text-align: center;
@@ -52,7 +43,7 @@ h1 {
  }
 
  #fondoImagen1{
-    background: url(/img/fon13.jpg);
+    background: url(/img/FFondo3.jpg);
  }
 
  #fondoImagen2{
@@ -63,15 +54,6 @@ h1 {
  #fondoImagen1 p{
     font-weight: bold;
  }
-
-
-.icono-placeholder{
-}
-
-.tabulacion{
-   /* background-color: #dfe6e9;;*/
-    height: 9650px;
-}
 
 table, td, th {
     border: 1px solid gray;
@@ -85,3 +67,14 @@ th {
    font-family:Georgia, 'Times New Roman', Times, serif;
    width: 90%;   
 }
+
+
+#footer {
+    background-color:#0a3d62;
+    height: 600px;
+
+}
+
+#footer h3, h4 {
+    color:#ffffff;
+ }
