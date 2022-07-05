@@ -23,10 +23,11 @@ h1 {
     color:white
 }
 
-#row4{
+#row4, #visitanos{
     background-color: #dfe6e9;;
     height: 650px;
 }
+
 
 .categoria{
     font-size: 20px;
@@ -43,16 +44,22 @@ h1 {
  }
 
  #fondoImagen1{
-    background: url(/img/FFondo3.jpg);
+    background: url(/img/images8.jpg);
  }
 
  #fondoImagen2{
     background: url(/img/fondo11.jpg);
+    height: 950px;  
  }
 
 
  #fondoImagen1 p{
     font-weight: bold;
+ }
+
+ #fondoImagen1 h4{
+    color: red;
+    font-weight: bold; 
  }
 
 table, td, th {
