@@ -78,10 +78,10 @@ th {
 
 #footer {
     background-color:#0a3d62;
-    height: 500px;
+    height: 550px;
 
 }
 
-#footer h3, h4 {
+#footer h5, h4, h3 {
     color:#ffffff;
  }
