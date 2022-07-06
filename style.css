@@ -13,10 +13,6 @@
     background:black
 }
 
-h1 {
-    color:white
-}
-
 #row4, #visitanos{
     background-color: #dfe6e9;;
     height: 650px;
@@ -29,21 +25,23 @@ h1 {
  }
 
 .atributo{
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
  }
 
- hr{
-    border-color: black;
- }
 
  #fondoImagen1{
     background: url(img/images8.jpg);
+    height: 950px; 
+    width: 1140px; 
+    margin: auto;
  }
 
  #fondoImagen2{
     background: url(img/fondo11.jpg);
-    height: 950px;  
+    height: 950px; 
+    width: 1140px; 
+    margin: auto;
  }
 
 
@@ -66,7 +64,19 @@ th {
 
 #tabla{
    font-family:Georgia, 'Times New Roman', Times, serif;
-   width: 90%;   
+   width: 100%;   
+}
+
+#row4 h3 {
+   color:#0e0d0d;
+}
+
+h1 {
+   color:white
+}
+
+p {
+   color:#0e0d0d;
 }
 
 
@@ -78,8 +88,11 @@ th {
 
 #footer h5, h4, h3 {
     color:#ffffff;
- }
+}
 
- #row4 h3{
-    color:#0e0d0d;
- }
+
+footer p {
+   color:#ffffff;
+   font-size: 14px;
+}
+
