@@ -31,16 +31,15 @@
 
 
  #fondoImagen1{
-    background: url(img/images8.jpg);
+    background: url(img/pared1.jpg);
     height: 950px; 
-    width: 1140px; 
+    width: 1500px;
     margin: auto;
  }
 
  #fondoImagen2{
     background: url(img/fondo11.jpg);
     height: 950px; 
-    width: 1140px; 
     margin: auto;
  }
 
@@ -64,7 +63,7 @@ th {
 
 #tabla{
    font-family:Georgia, 'Times New Roman', Times, serif;
-   width: 100%;   
+   width: 80%;   
 }
 
 #row4 h3 {
